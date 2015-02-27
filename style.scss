@@ -36,11 +36,24 @@
 		padding: 1em;
 
 		section{
+			padding: 1em;
 			background-color: #f1f1f1;
 			border: solid 0.1em black;
 			border-radius: 0.3em;
 			height: 4em;
 			margin: 1em 0;
+			display: flex;
+			justify-items: flex-start;
+			align-items: center;
+			.score{
+				width: 2em;
+				height: 2em;
+				border: solid 0.1em black;
+			}
+			.question{
+				border: solid 0.1em black;
+				width: 100%;
+			}
 		}
 	}
 
