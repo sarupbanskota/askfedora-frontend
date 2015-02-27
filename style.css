@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@media screen and (min-width: 0em) {
+  nav {
+    background-color: #f1f1f1;
+    height: 3em; }
+
+  header {
+    background-color: blue;
+    height: 10em; }
+
+  .filter {
+    height: 3em;
+    background-color: #f1f1f1; }
+
+  article {
+    background-color: #f9f9f9;
+    padding: 1em; }
+    article section {
+      background-color: #f1f1f1;
+      border: solid 0.1em black;
+      border-radius: 0.3em;
+      height: 4em;
+      margin: 1em 0; }
+
+  footer {
+    background-color: gray;
+    height: 2em; } }
