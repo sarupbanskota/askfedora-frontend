@@ -11,7 +11,10 @@
 
   header {
     background-color: blue;
-    height: 10em; }
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   .filter {
     height: 3em;

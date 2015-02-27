@@ -14,6 +14,9 @@
 	header{
 		background-color: blue;
 		height: 10em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.filter{
