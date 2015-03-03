@@ -4,6 +4,9 @@
   font-family: 'Open Sans', sans-serif; }
 
 @media screen and (min-width: 0em) {
+  .main-wrapper {
+    background-color: #f9f9f9; }
+
   nav {
     background: #fafafa;
     background: -moz-linear-gradient(top, #fafafa 0%, #f0f0f0 28%, #dbdbdb 100%);
@@ -91,7 +94,6 @@
     display: none; }
 
   article {
-    background-color: #f9f9f9;
     padding: 1em; }
     article section {
       background-color: #f1f1f1;
@@ -115,15 +117,22 @@
     footer .attributes {
       display: flex;
       justify-content: space-around; } }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 45em) {
+  header input[type=button] {
+    width: 10%;
+    height: 37.5%; }
+
   .main-wrapper {
-    display: flex; }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start; }
     .main-wrapper article {
-      padding: 2em 2.5em 2em 4.5em;
-      width: 75%; }
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-end;
+      width: 70%; }
+      .main-wrapper article section {
+        width: 85%; }
     .main-wrapper aside {
-      display: block;
-      width: 25%;
-      padding: 2em 2em 2em 4em;
-      height: 5em;
-      background-color: red; } }
+      display: initial;
+      width: 30%; } }
