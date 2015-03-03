@@ -19,14 +19,14 @@
     color: #6F6C6A;
     display: flex;
     justify-content: space-between;
-    padding: 0.2em;
-    font-size: 2em;
+    padding: 6px;
+    font-size: 1.7em;
     position: relative; }
 
   header {
     background-color: #3c6eb4;
     background-image: url("img/header.png");
-    height: 10em;
+    height: 8em;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -72,13 +72,14 @@
     border: 3px solid #128c1e;
     display: inline-block;
     color: #ffffff;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-style: normal;
     text-align: center; }
 
   .filter {
     height: 3em;
     background-color: #dbdbdb;
+    color: #494949;
     display: flex;
     justify-content: space-around;
     line-height: 45px; }
@@ -102,4 +103,12 @@
 
   footer {
     background-color: gray;
-    height: 2em; } }
+    color: #242424;
+    height: 2.5em;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    line-height: 40px; }
+    footer .attributes {
+      display: flex;
+      justify-content: space-around; } }
