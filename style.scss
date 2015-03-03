@@ -1,8 +1,12 @@
+// todo - work out whether we need a normalizer
+
 *{
 	padding: 0;
 	margin: 0;
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
+// todo - use flexbox align-items property instead
 
 @mixin vertical-align {
 	position: relative;
@@ -15,6 +19,8 @@
 @media screen and (min-width: 0em){
 	nav{
 
+		// todo - fix this mess, refactor into mixin
+
 		background: rgba(250,250,250,1);
 		background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 28%, rgba(219,219,219,1) 100%);
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,250,250,1)), color-stop(28%, rgba(240,240,240,1)), color-stop(100%, rgba(219,219,219,1)));
@@ -24,6 +30,8 @@
 		background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 28%, rgba(219,219,219,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dbdbdb', GradientType=0 );
 
+		// todo - refactor into mixin
+
 		-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
 		-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
 		box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
@@ -32,8 +40,8 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 6px;
-        font-size: 1.7em;
-        position: relative;
+    font-size: 1.7em;
+    position: relative;
 	}
 
 
@@ -78,7 +86,6 @@
 		outline: none;
 	}
 	
-
 	.button-large{
 		width: 25%;
 		height: 35%;
@@ -111,6 +118,10 @@
 		}
 	}
 
+	aside{
+		display: none;
+	}
+
 	article{
 		background-color: #f9f9f9;
 		padding: 1em;
@@ -139,6 +150,23 @@
 		.attributes{
 			display: flex;
 			justify-content: space-around;
+		}
+	}
+}
+
+@media screen and (min-width: 60em){
+	.main-wrapper{
+		display: flex;
+		article{
+			padding: 2em 2.5em 2em 4.5em;
+			width: 75%;
+		}
+		aside{
+			display: block;
+			width: 25%;
+			padding: 2em 2em 2em 4em;
+			height: 5em;
+			background-color: red;
 		}
 	}
 }

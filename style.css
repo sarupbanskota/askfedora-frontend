@@ -12,7 +12,7 @@
     background: -o-linear-gradient(top, #fafafa 0%, #f0f0f0 28%, #dbdbdb 100%);
     background: -ms-linear-gradient(top, #fafafa 0%, #f0f0f0 28%, #dbdbdb 100%);
     background: linear-gradient(to bottom, #fafafa 0%, #f0f0f0 28%, #dbdbdb 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dbdbdb', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#dbdbdb', GradientType=0 );
     -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
@@ -87,6 +87,9 @@
       display: flex;
       justify-content: space-around; }
 
+  aside {
+    display: none; }
+
   article {
     background-color: #f9f9f9;
     padding: 1em; }
@@ -112,3 +115,15 @@
     footer .attributes {
       display: flex;
       justify-content: space-around; } }
+@media screen and (min-width: 60em) {
+  .main-wrapper {
+    display: flex; }
+    .main-wrapper article {
+      padding: 2em 2.5em 2em 4.5em;
+      width: 75%; }
+    .main-wrapper aside {
+      display: block;
+      width: 25%;
+      padding: 2em 2em 2em 4em;
+      height: 5em;
+      background-color: red; } }
