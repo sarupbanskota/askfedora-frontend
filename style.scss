@@ -80,10 +80,6 @@
 	    clear: both;
 	}
 
-	.sort-by{
-		font-weight: bold;
-	}
-
 	.question-text:focus {
 		background: #fff;
 		outline: none;
@@ -112,14 +108,18 @@
 		height: 3em;
 		background-color: #dbdbdb;
 		color: #494949;
-		display: flex;
-		justify-content: space-around;
+		// todo - use flex align-items instead
 		line-height: 45px;
-		.attributes{
+		.sorter{
 			display: flex;
 			justify-content: space-around;
+			.sort-by{
+				font-weight: bold;
+			}
 		}
 	}
+
+
 
 	aside{
 		display: none;
@@ -163,6 +163,18 @@
 			height: 37.5%;
 		}
 	}
+
+	.filter{
+		.filter-wrapper{
+			display: flex;
+			width: 70%;
+			justify-content: flex-end;
+			.sorter{
+				width: 70%;
+			}
+
+		}
+	}
 	.main-wrapper{
 		display: flex;
 		flex-flow: row nowrap;
@@ -180,7 +192,18 @@
 			display: initial;
 			width: 30%;
 			section{
+				padding: 2em 4em;
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 70em){
+	.filter{
+		.filter-wrapper{
+			.sorter{
+				width: 50%;
+			}
+		}
+	}	
 }
