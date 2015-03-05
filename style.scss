@@ -6,16 +6,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-// todo - use flexbox align-items property instead
-
-@mixin vertical-align {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
 @media screen and (min-width: 0em){
 	.main-wrapper{
 		background-color: #f9f9f9;
@@ -133,6 +123,7 @@
 			border: solid 0.1em #dbdbdb;
 			border-radius: 0.3em;
 			padding: 5px;
+			padding-bottom:10px;
 			margin-top: 1em;
 			margin-bottom: 2em;
 			display: flex;
@@ -156,6 +147,65 @@
 				display: flex;
 				flex-direction: column;
 				flex: 1;
+			}
+
+			// TODO - use mixins and remove vendor specific stuff
+
+			.tags{
+				right:24px;
+				bottom:-12px;
+				list-style:none;
+				a{
+					float:left;
+					height:24px;
+					line-height:24px;
+					position:relative;
+					font-size:11px;
+					margin-left:10px;
+					margin-right:10px;
+					margin-top:10px;
+					padding:0 7px 0 10px;
+					background:#6d6d6d;
+					color:#fff;
+					text-decoration:none;
+					-moz-border-radius-bottomright:4px;
+					-webkit-border-bottom-right-radius:4px;
+					border-bottom-right-radius:4px;
+					-moz-border-radius-topright:4px;
+					-webkit-border-top-right-radius:4px;
+					border-top-right-radius:4px;
+				}
+				a:before{
+					content:"";
+					float:left;
+					position:absolute;
+					left:-12px;
+					border-color:transparent #6d6d6d transparent transparent;
+					border-style:solid;
+					border-width:12px 12px 12px 0;
+				}
+				a:after{
+					content:"";
+					position:absolute;
+					top:10px;
+					left:0;
+					float:left;
+					width:5px;
+					height:5px;
+					-moz-border-radius:2px;
+					-webkit-border-radius:2px;
+					border-radius:2px;
+					background:#fff;
+					-moz-box-shadow:-1px -1px 2px #424242;
+					-webkit-box-shadow:-1px -1px 2px #424242;
+					box-shadow:-1px -1px 2px #424242;
+				}
+				a:hover{
+					background:#424242;
+				}
+				a:hover:before{
+					border-color:transparent #424242 transparent transparent;
+				}
 			}
 		}
 	}
