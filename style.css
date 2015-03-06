@@ -92,6 +92,12 @@
 
   article {
     padding: 1em; }
+    article paginator {
+      color: #494949;
+      font-size: 1.5em;
+      text-align: center; }
+      article paginator a {
+        margin: 5px; }
     article section {
       background-color: #f1f1f1;
       border: solid 0.1em #dbdbdb;
@@ -125,7 +131,7 @@
         article section .tags a {
           float: left;
           height: 24px;
-          line-height: 24px;
+          line-height: 23px;
           position: relative;
           font-size: 11px;
           margin-left: 10px;
@@ -191,6 +197,9 @@
     justify-content: flex-end; }
     .filter .filter-wrapper .sorter {
       width: 70%; }
+
+  paginator {
+    width: 85%; }
 
   .main-wrapper {
     display: flex;

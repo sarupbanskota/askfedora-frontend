@@ -109,15 +109,20 @@
 		}
 	}
 
-
-
 	aside{
 		display: none;
 	}
 
 	article{
 		padding: 1em;
-
+		paginator{
+			color: #494949;
+			font-size: 1.5em;
+			text-align: center;
+			a{
+				margin: 5px;
+			}
+		}
 		section{
 			background-color: #f1f1f1;
 			border: solid 0.1em #dbdbdb;
@@ -158,7 +163,7 @@
 				a{
 					float:left;
 					height:24px;
-					line-height:24px;
+					line-height:23px;
 					position:relative;
 					font-size:11px;
 					margin-left:10px;
@@ -244,6 +249,11 @@
 
 		}
 	}
+
+	paginator{
+		width: 85%;
+	}
+
 	.main-wrapper{
 		display: flex;
 		flex-flow: row nowrap;
@@ -274,5 +284,5 @@
 				width: 50%;
 			}
 		}
-	}	
+	}
 }
